@@ -1,0 +1,112 @@
+.container{
+    background-image:linear-gradient(180deg, #130754 0% ,#3b2f80 100%) ;
+ 
+padding: 100px;
+}
+.container .top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.top-bar input{
+    outline: none;
+    border-radius: 40px;
+    width: 500px;
+    height: 60px;
+    background-color: #ebffeb;
+    color: #626262 ;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left:40px ;
+}
+.top-bar .search{margin-left: 20px;
+    padding:15px 20px;
+    background-color: #ebffeb;
+    border-radius: 40px;
+    color: #626262;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.top-bar .search:hover{
+    background-color: #130754;
+    color: white;
+}
+.data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    
+}
+.data img{
+    width: 300px;
+}
+.data .data-temp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.data-temp .city,.temp{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+margin-top:20 px;
+
+}
+.data-temp .temp span{
+font-size: 50px;
+
+}
+ .data .wind-humidity{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.wind,.humidity{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-left: 20px;
+    color: white;
+
+}
+.wind-humidity img{
+    width: 50px;
+    border-radius: 50%;
+}
+.card{
+    background: linear-gradient(-45deg, #5555FF, #9787FF);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    display: none;
+}
+.card {
+    background: linear-gradient(-45deg, #5555FF, #9787FF, #FF55B8, #FF8787);
+    background-size: 400% 400%;
+    animation: bg 20s infinite;
+    height: 400px;
+    margin-top: 30px;
+  
+  }
+  @keyframes bg
+{
+  0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
