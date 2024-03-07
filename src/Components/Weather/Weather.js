@@ -22,7 +22,7 @@ if(input[0].value===''){
    window.alert('enter city')
    return 0;
 }
-const url=`http://api.openweathermap.org/data/2.5/forecast?q=${input[0].value}&appid=${keyApi}`
+const url=`https://api.openweathermap.org/data/2.5/forecast?q=${input[0].value}&appid=${keyApi}`
 try{
 let respons= await fetch(url)
 if(!respons.ok){throw new Error('Network response was not ok'); 
