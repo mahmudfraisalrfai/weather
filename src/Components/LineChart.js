@@ -13,8 +13,8 @@ ChartJS.register(
 );
 
  const LineChart = ({dataDay}) => {
-  const dataTepm=[Math.floor(dataDay.list[0].main.temp-273),Math.floor(dataDay.list[7].main.temp-273),Math.floor(dataDay.list[15].main.temp-273),Math.floor(dataDay.list[23].main.temp-273)
-        ,Math.floor(dataDay.list[31].main.temp-273)]
+  const dataTepm=[Math.floor(dataDay[0].main.temp-273),Math.floor(dataDay[1].main.temp-273),Math.floor(dataDay[2].main.temp-273),Math.floor(dataDay[3].main.temp-273)
+        ,Math.floor(dataDay[4].main.temp-273)]
 const mainLabels=["Day1","Day2","Day3","Day4","Day5"];
     const data={
       labels:mainLabels,
@@ -65,7 +65,7 @@ const mainLabels=["Day1","Day2","Day3","Day4","Day5"];
     }
     }
   return (
-    <Line data={data}    options={options} style={{flex:'1',width:'500px',}}/>
+    <Line data={data} options={options} style={{flex:'1',width:'500px',}}/>
   )
 
   }

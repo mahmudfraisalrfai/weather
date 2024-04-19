@@ -1,7 +1,8 @@
 .container{
     background-image:linear-gradient(180deg, #130754 0% ,#3b2f80 100%) ;
- 
+ min-height:100vh;
 padding: 100px;
+box-sizing: border-box;
 }
 .container .top-bar{
     display: flex;
@@ -110,3 +111,6 @@ align-items: center;
 	}
 }
 
+Spinner{
+    margin-top: 50px;
+}
